@@ -1,0 +1,139 @@
+.page-heading {
+    margin-bottom: 24px;
+}
+
+.page-heading h1 {
+    margin-bottom: 6px;
+    color: var(--text);
+    font-size: 26px;
+}
+
+.page-heading p {
+    color: var(--light-text);
+    font-size: 13px;
+}
+
+.designs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.my-design-card {
+    overflow: hidden;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(30, 25, 30, 0.04);
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-design-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(229, 43, 106, 0.1);
+}
+
+.my-design-thumb {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #f2eef1;
+}
+
+.my-design-body {
+    padding: 14px 16px;
+}
+
+.my-design-body h3 {
+    margin-bottom: 6px;
+    color: var(--text);
+    font-size: 15px;
+}
+
+.my-design-date {
+    color: var(--muted);
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.my-design-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.type-chip {
+    padding: 4px 9px;
+    border-radius: 20px;
+
+    background: var(--pink-soft);
+    border: 1px solid #ffcddd;
+    color: var(--pink-dark);
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.my-design-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 10px;
+    border-top: 1px solid var(--border);
+}
+
+.my-design-likes {
+    color: var(--light-text);
+    font-size: 12px;
+}
+
+.my-design-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.my-design-actions button {
+    padding: 6px 12px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--white);
+
+    color: var(--light-text);
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.my-design-actions .delete-btn:hover {
+    background: #fff0f2;
+    border-color: #ffb9c4;
+    color: #ae3a4c;
+}
+
+.empty-state {
+    padding: 60px 20px;
+    text-align: center;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.empty-state h3 {
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.empty-state p {
+    margin-bottom: 16px;
+    color: var(--muted);
+    font-size: 12px;
+}

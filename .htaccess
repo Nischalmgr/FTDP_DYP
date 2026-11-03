@@ -1,0 +1,11 @@
+Options -Indexes
+
+<IfModule mod_php.c>
+    php_value upload_max_filesize 8M
+    php_value post_max_size 12M
+</IfModule>
+
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 8M
+    php_value post_max_size 12M
+</IfModule>

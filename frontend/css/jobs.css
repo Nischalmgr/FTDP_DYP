@@ -1,0 +1,187 @@
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.job-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    padding: 20px;
+
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(30, 25, 30, 0.04);
+
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+    border-color: var(--pink-border);
+    box-shadow: 0 8px 22px rgba(229, 43, 106, 0.08);
+}
+
+.job-card-main h3 {
+    margin-bottom: 6px;
+    color: var(--text);
+    font-size: 16px;
+}
+
+.job-card-company {
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.job-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    color: var(--light-text);
+    font-size: 12px;
+}
+
+.job-card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.job-card-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.apply-btn,
+.details-btn {
+    padding: 10px 16px;
+
+    border-radius: 8px;
+    border: 1px solid var(--pink);
+
+    background: var(--pink);
+    color: var(--white);
+
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.apply-btn:hover {
+    background: var(--pink-dark);
+    border-color: var(--pink-dark);
+}
+
+.apply-btn.applied {
+    background: var(--white);
+    color: var(--pink);
+    cursor: default;
+}
+
+.save-job-btn {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--white);
+
+    color: var(--muted);
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.save-job-btn.saved {
+    color: var(--pink);
+    border-color: var(--pink-border);
+}
+
+.apply-modal-overlay {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 2000;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.apply-modal-overlay.active {
+    display: flex;
+}
+
+.apply-modal {
+    width: 92%;
+    max-width: 460px;
+
+    padding: 26px;
+
+    background: var(--white);
+    border-radius: 12px;
+}
+
+.apply-modal h3 {
+    margin-bottom: 14px;
+    color: var(--text);
+}
+
+.apply-modal textarea,
+.apply-modal input[type="file"] {
+    width: 100%;
+    padding: 11px 13px;
+    margin-bottom: 14px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.apply-modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.apply-modal-actions button {
+    padding: 10px 16px;
+
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.apply-modal-cancel {
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--light-text);
+}
+
+.apply-modal-submit {
+    border: 1px solid var(--pink);
+    background: var(--pink);
+    color: var(--white);
+}
